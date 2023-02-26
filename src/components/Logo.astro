@@ -1,9 +1,20 @@
 ---
-import { Picture } from '@astrojs/image/components';
+// import { Image } from '@astrojs/image/components';
 
-const image = { src: import('~/assets/images/logo.png'), alt: 'AstroWind Hero Image' };
+//  const image = { src: import('~/assets/images/logo.svg'), alt: 'AstroWind Hero Image' };
+import logo1 from '../assets/images/logo1.svg';
+import logo2 from '../assets/images/logo2.svg';
+//import logov1 from '../assets/images/logov1.png';
+
 ---
 
-<Picture {...image} widths={[200, 400, 25]} sizes="(max-width: 25px) 100vw, 25px" alt="The Astro logo" />
-<span class="self-center ml-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
- Yakin<span class="text-gray-500 dark:text-gray-200">Soft</span></span>
+<img src={logo1} class="self-center h-auto max-w-full" style="height: 45px" />
+<span class="self-center text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
+ akin</span>
+ <img src={logo2} class="self-center h-auto max-w-full" style="height: 35px" />
+ <span class="self-center text-2xl md:text-3xl font-bold text-gray-900 whitespace-nowrap dark:text-white">oft</span>
+
+
+ <script>
+    
+ </script>
